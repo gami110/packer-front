@@ -1,0 +1,57 @@
+.container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.container-form__inner-wrapper {
+    
+    height: auto;
+    width: auto;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+    
+}
+.someDiv {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+ }
+
+
+
+ .NaVLink {
+    position: relative;
+    right: 15px;
+    font-size: 16px;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    color: rgb(5, 123, 194);
+    height: 48px;
+    width: 175px;
+    font-weight: bold;
+     
+ }
+
+
+ .NaVLink1 {
+    position: relative;
+    right: 80px;
+    font-size: 16px;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    color: rgb(5, 123, 194);
+    height: 48px;
+    width: 175px;
+    font-weight: bold;
+     
+ }
