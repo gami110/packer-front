@@ -103,8 +103,9 @@ function ContainerForm() {
                         <input type="text" className="form-control" />
                     </label>
                 </form>
-                <button className="butTon" onClick={() => setModalActive(true)}>Запустить</button>
+                <button className="butTon"  onClick={() => setModalActive(true)}>Запустить</button>
             </div>
+           
            <Modal active={modalActive} setActive={setModalActive}>
            <form className="someDiv">
                     <label>
@@ -130,6 +131,7 @@ function ContainerForm() {
                     
             </form>
            </Modal>
+
         </div>
     )
 }
