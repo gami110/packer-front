@@ -104,6 +104,7 @@ function ContainerForms() {
                 'length': containerLength,
                 'height': containerHeight,
                 'weight': containerWeight,
+
             }
         );
         const requestOption = {
@@ -279,7 +280,7 @@ function ContainerForms() {
                         />
                 </form>
                 <h1 className="mb-3 text-xl fs-5 font-medium someDiv">  Задайте размер, массу и количество груза или импортируйте свой файл: </h1>
-                <button>{pickedFileUpload ? 'Задать параметры грузов' : 'Загрузить файл'}</button>
+                <button onClick={() => setPickedFileUpload(!pickedFileUpload)}>{ pickedFileUpload ? 'Задать параметры грузов' : 'Загрузить файл'}</button>
                 { pickedFileUpload ? 
                     <fieldset>
                         <input  
@@ -287,6 +288,7 @@ function ContainerForms() {
                             name="xlsx" 
                             accept=".xlsx"
                             onChange={fileChangeHandler}
+                            
                         />                        
                     </fieldset>
                     : 
@@ -297,8 +299,8 @@ function ContainerForms() {
                         <button className="input-file-btn" onClick={addEmptyCargo}>Добавить груз</button>
                     </Fragment>
                 }
-                <h1 className="mb-3 text-xl fs-5 font-medium someDiv"> Выберите параметры для погрузки: </h1>
-                <form className="cargos__item">
+                {/* <h1 className="mb-3 text-xl fs-5 font-medium someDiv"> Выберите параметры для погрузки: </h1> */}
+                {/* <form className="cargos__item">
 
                     <label className='label'>
                         <input type="checkbox" className='checkbox'/>
@@ -310,7 +312,7 @@ function ContainerForms() {
                         <span className='fake'></span>
                         <span className='text'>Штабелирование разрешено</span>
                     </label>                  
-                </form>
+                </form> */}
 
 
                 <h1 className="mb-3 fs-5 font-medium someDiv">  Минимальная стоимость погрузки одного контейнера и стоимость погрузки одной тонны: </h1>
